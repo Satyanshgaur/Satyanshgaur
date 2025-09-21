@@ -1,4 +1,4 @@
-I'm Satyansh  
+# I'm Satyansh  
 
 💻 **Python Developer | Machine Learning & Blockchain Enthusiast**  
 
@@ -27,4 +27,5 @@ I build intelligent systems and scalable applications with Python as my primary 
 
 ---
 *"Code. Learn. Iterate. Scale."*
+
 
