@@ -1,32 +1,51 @@
-# I'm Satyansh  
+# Satyansh Gaur
 
-💻 **Python Developer | Machine Learning & Blockchain Enthusiast**  
+I am a software developer focused on **systems programming and high-performance computing for AI workloads**.  
+My current work centers around building a strong foundation in **Linux systems, modern C++, and performance-oriented programming**, with the long-term goal of working on **AI inference engines and performance-critical systems**.
 
-I build intelligent systems and scalable applications with Python as my primary toolkit. My focus is on applying **machine learning** to real-world problems and exploring the future of **decentralized technologies** through blockchain.  
+## Current Focus
 
-## 🔧 Core Skills
-- **Programming:** Python (primary), C++, C  
-- **Machine Learning:** Model development, fine-tuning, RAG pipelines, applied ML projects  
-- **Blockchain:** Smart contracts, decentralized apps, crypto-economic systems  
-- **Other Tools:** Git, Linux, Docker, FastAPI, Django  
+- Developing strong fundamentals in **C++ and systems programming**
+- Understanding **Linux systems, memory management, and networking**
+- Building small systems tools and performance-oriented projects
+- Studying how modern **AI runtimes and inference engines** are designed
 
-## 🚀 Current Work
-- Developing AI-driven chatbots and mental health applications  
-- Exploring reinforcement learning and advanced ML concepts  
-- Building blockchain-backed solutions for secure and scalable systems  
+## Technical Skills
 
-## 📚 Ongoing Learning
-- Deep dive into *Pattern Recognition and Machine Learning* (Bishop)  
-- Kaggle competitions and applied ML projects  
-- Contributing to open-source ML/Blockchain repos  
+**Languages**
+- Python
+- C++
 
-## 🌍 Connect With Me
-- [LinkedIn](https://www.linkedin.com/in/satyansh-gaur-2b1b05370/)  
-- [Twitter / X](https://x.com/GaurSatyansh?t=_TML8tmAZnNuSIKNWACI8w&s=09)  
-- [Portfolio Website](https://satyansh-gaur-new-portfolio.vercel.app)  
+**Systems & Tools**
+- Linux
+- Git
+- Command line development
+- Build systems and debugging tools
 
----
-*"Code. Learn. Iterate. Scale."*
+**Areas of Interest**
+- Systems programming
+- Performance engineering
+- GPU architecture
+- AI inference systems
 
+## Projects
 
+My recent projects related to:
 
+- Systems programming experiments
+- Performance-focused C++ implementations
+- Linux utilities and CLI tools
+- Experiments with machine learning infrastructure
+
+## Reading & Study
+
+Some of the material I am currently studying includes:
+
+- *LearnCpp* — modern C++ fundamentals
+- Systems and performance engineering resources
+- Open source systems codebases
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/satyansh-gaur-2b1b05370/
+- GitHub: https://github.com/satyanshgaur
