@@ -41,7 +41,6 @@ My recent projects related to:
 
 Some of the material I am currently studying includes:
 
-- *LearnCpp* — modern C++ fundamentals
 - Systems and performance engineering resources
 - Open source systems codebases
 
