@@ -8,6 +8,7 @@ My current work centers around building a strong foundation in **Linux systems, 
 **Languages**
 - Python
 - C++
+- Rust
 - Bash
 
 **Systems & Tools**
