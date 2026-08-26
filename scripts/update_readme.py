@@ -59,6 +59,7 @@ local vault = require("satyansh.vault")
 vault.inference = {{
   model              = "{model_name}",
   adapter            = "{lora_name}",
+  fine_tuned_on      = "Satyansh gaur personal data",
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",

@@ -16,11 +16,12 @@ local vault = require("satyansh.vault")
 vault.inference = {
   model              = "SmolLM-135M-Instruct",
   adapter            = "satyansh-lora-r16 (PEFT)",
+  fine_tuned_on      = "Satyansh gaur personal data",
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 14,
-  generated_at       = "2026-08-26 14:44 UTC",
+  run_id             = 16,
+  generated_at       = "2026-08-26 14:58 UTC",
 }
 
 -- ==============================================================================
@@ -30,8 +31,8 @@ vault.inference = {
 local completion = [[
 Hardware reality dictates software architecture.
 
-Cache hierarchies and PCIe lane limits dictate software
-design at scale.
+Cache hierarchies and PCIe lane limits dictate software design at
+scale.
 ]]
 ```
 <!-- satyansh-mini:end -->
