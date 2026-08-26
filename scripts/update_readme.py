@@ -24,7 +24,7 @@ def save_state(state):
     with open(STATE_PATH, "w") as f:
         json.dump(state, f, indent=2)
 
-def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct", lora_name="satyansh-lora-r16"):
+def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct", lora_name="satyansh-lora-r16 (PEFT)"):
     state = load_state()
     state["generation_count"] += 1
     now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -32,21 +32,48 @@ def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct", lor
     save_state(state)
     
     count = state["generation_count"]
-    clean_text = generated_text.strip().strip('"').strip("'")
+    clean_text = generated_text.strip().strip('"').strip("'").replace('\\n', '\n')
     
-    # Wrap text cleanly for the wide terminal box (width ~92 chars)
-    wrapped_lines = textwrap.wrap(clean_text, width=92)
-    if not wrapped_lines:
-        wrapped_lines = [clean_text]
-    inner_text = "\n".join([f"| {line:<98} |" for line in wrapped_lines])
-    
-    meta_line = f"[ Run: #{count:04d} | Model: {model_name} | LoRA: {lora_name} | Runner: GitHub Actions (CPU) ]"
-    meta_formatted = f"| {meta_line:<98} |"
+    # Strip any redundant prefix so the completion text is clean
+    if clean_text.lower().startswith("today's special from satyansh's vault:"):
+        clean_text = clean_text[len("today's special from satyansh's vault:"):].strip()
+    elif clean_text.lower().startswith("satyansh thinks:"):
+        clean_text = clean_text[len("satyansh thinks:"):].strip()
+        
+    paragraphs = clean_text.split("\n\n")
+    wrapped_paragraphs = []
+    for p in paragraphs:
+        lines = textwrap.wrap(p.strip(), width=65)
+        if lines:
+            wrapped_paragraphs.append("\n".join(lines))
+            
+    formatted_completion = "\n\n".join(wrapped_paragraphs) if wrapped_paragraphs else clean_text
     
     formatted_block = f"""{START_TAG}
-{inner_text}
-|                                                                                                    |
-{meta_formatted}
+```lua
+-- ==============================================================================
+-- SATYANSH-MINI // NVIM RUNTIME BUFFER (STATUS: ONLINE)
+-- ==============================================================================
+local vault = require("satyansh.vault")
+
+vault.inference = {{
+  model              = "{model_name}",
+  adapter            = "{lora_name}",
+  parameters         = "135M + 1.2M LoRA",
+  precision          = "FP16",
+  runner             = "github-actions-cpu",
+  run_id             = {count},
+  generated_at       = "{now_utc}",
+}}
+
+-- ==============================================================================
+-- LATEST COMPLETION
+-- ==============================================================================
+
+local completion = [[
+{formatted_completion}
+]]
+```
 {END_TAG}"""
 
     if not os.path.exists(README_PATH):
@@ -71,5 +98,5 @@ def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct", lor
 
 if __name__ == "__main__":
     import sys
-    text = sys.argv[1] if len(sys.argv) > 1 else "today's special from satyansh's vault: Hardware reality dictates software architecture."
+    text = sys.argv[1] if len(sys.argv) > 1 else "Hardware reality dictates software architecture.\n\nCache hierarchies and PCIe lane limits dictate software design at scale."
     update_readme_content(text)

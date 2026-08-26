@@ -4,24 +4,41 @@
 
 <br/>
 
-```text
-+----------------------------------------------------------------------------------------------------+
-| o o o                      SATYANSH-MINI // AUTONOMOUS LIVE INFERENCE                              |
-+----------------------------------------------------------------------------------------------------+
-| satyansh@fedora:~$ satyansh-mini --eval --vault                                                    |
-|                                                                                                    |
-<!-- satyansh-mini:start -->
-| today's special from satyansh's vault: Hardware reality dictates software architecture.            |
-| Cache hierarchies and PCIe lane limits dictate software design at scale.                           |
-|                                                                                                    |
-| [ Run: #0012 | Model: SmolLM-135M-Instruct | LoRA: satyansh-lora-r16 | Runner: GitHub Actions (CPU) ] |
-<!-- satyansh-mini:end -->
-+----------------------------------------------------------------------------------------------------+
-```
+### Periodic LLM Generated Comment (Working inside the Readme):
 
-A few things the model knows about me, and you'll probably wanna know as well:
+<!-- satyansh-mini:start -->
+```lua
+-- ==============================================================================
+-- SATYANSH-MINI // NVIM RUNTIME BUFFER (STATUS: ONLINE)
+-- ==============================================================================
+local vault = require("satyansh.vault")
+
+vault.inference = {
+  model              = "SmolLM-135M-Instruct",
+  adapter            = "satyansh-lora-r16 (PEFT)",
+  parameters         = "135M + 1.2M LoRA",
+  precision          = "FP16",
+  runner             = "github-actions-cpu",
+  run_id             = 16,
+  generated_at       = "2026-08-26 14:58 UTC",
+}
+
+-- ==============================================================================
+-- LATEST COMPLETION
+-- ==============================================================================
+
+local completion = [[
+Hardware reality dictates software architecture.
+
+Cache hierarchies and PCIe lane limits dictate software design at
+scale.
+]]
+```
+<!-- satyansh-mini:end -->
 
 ---
+
+## A few things the model knows about me, and you'll probably wanna know as well:
 
 ### $ whoami
 
@@ -34,7 +51,7 @@ numbers_that_matter:
   paytm_hackathon: 1st Place Winner (CommuneOS)
   sgp4_throughput: 275,000 steps/sec (192x Numba JIT)
   graphmem_latency: 12ms multi-hop traversal (Consumer VRAM)
-  model_params: 135M (SmolLM LoRA fine-tuned with PEFT)
+  model_params: 135M + 1.2M LoRA (PEFT)
 
 currently:
   researching: Systems Architecture, Custom Kernels, Lock-Free Concurrency
