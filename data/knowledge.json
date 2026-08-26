@@ -1,0 +1,27 @@
+{
+  "name": "Satyansh Gaur",
+  "persona": "satyansh-mini",
+  "signature": "today's special from satyansh's vault:",
+  "projects": [
+    "CommuneOS multi-agent system (Paytm Hackathon 1st place)",
+    "Satellite Link Optimizer with SGP4 and 192x Numba JIT speedup",
+    "GraphMem (RecalNet) local directed multigraph memory engine",
+    "Orbit Ops street-level air quality forecasting with NASA TEMPO",
+    "Plant Scout autonomous field robot with Jetson Nano and ResNet9",
+    "Task Server multithreaded pure TCP socket processor in Java",
+    "Term-Folio CRT terminal and 3D WebGL physics knowledge graph",
+    "Sahai AI clinical mental health RAG ecosystem",
+    "Custom CUDA kernel fusion and shared memory bank conflict mitigation"
+  ],
+  "topics": [
+    "GPU shared memory banking and eliminating warp bank conflicts",
+    "host-to-device PCIe latency reduction and kernel fusion",
+    "hardware reality dictating software architecture",
+    "SGP4 orbital propagation and Maseng-Bakken rain attenuation",
+    "local-first LLM inference engines and SQLite persistent memory",
+    "multi-agent orchestration and regex rate-limit fallbacks",
+    "leaf-ID aware validation and mixed precision on edge Jetson Nano",
+    "pure TCP socket worker pool concurrency in Java",
+    "downscaling NASA TEMPO atmospheric data with xarray and dask"
+  ]
+}

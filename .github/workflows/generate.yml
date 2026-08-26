@@ -1,0 +1,42 @@
+name: Autonomous README Generation
+
+on:
+  schedule:
+    # Runs every 8 hours
+    - cron: '0 */8 * * *'
+  workflow_dispatch: # Allows manual trigger from GitHub Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install --extra-index-url https://download.pytorch.org/whl/cpu torch transformers peft datasets trl
+
+      - name: Run satyansh-mini Generation Cycle
+        env:
+          USE_GPU: "0"
+        run: |
+          python scripts/run_cycle.py
+
+      - name: Commit & Push README Update
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md data/state.json
+          git diff --staged --quiet || (git commit -m "🤖 satyansh-mini: automated profile thought update" && git push)

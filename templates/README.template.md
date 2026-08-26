@@ -7,11 +7,11 @@
 |                                                                              |
 |  +-- TODAY'S SPECIAL FROM SATYANSH'S VAULT -------------------------------+  |
 <!-- satyansh-mini:start -->
-|  today's special from satyansh's vault: A single molecule can trigger a    |
-|  500-meter-wide response time, but that doesn't mean you need to worry     |
-|  about atmospheric pressure or cloud physics at your disposal.             |
+|  today's special from satyansh's vault:                                      |
+|  "Hardware reality dictates software architecture. Cache hierarchies and     |
+|   PCIe lane limits dictate software design at scale."                        |
 |                                                                              |
-|  [ Run: #0010 | Runner: GitHub Actions (CPU) | Generated: 2026-08-26 13:49 UTC | Cost: $0.00 ]|
+|  [ Run: #0001 | Runner: GitHub Actions (CPU) | Cost: $0.00 ]                 |
 <!-- satyansh-mini:end -->
 |  +------------------------------------------------------------------------+  |
 |                                                                              |
