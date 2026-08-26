@@ -11,10 +11,10 @@
 | satyansh@fedora:~$ satyansh-mini --eval --vault                                                    |
 |                                                                                                    |
 <!-- satyansh-mini:start -->
-| today's special from satyansh's vault: Memory access patterns can be 32-hour jolts away;           |
-| modern GPUs have 16GB CUDA kernels and 4KB 3D buffers for real-time data transfer.                 |
+| today's special from satyansh's vault: Hardware reality dictates software architecture.            |
+| Cache hierarchies and PCIe lane limits dictate software design at scale.                           |
 |                                                                                                    |
-| [ Run: #0011 | Model: SmolLM-135M-Instruct (LoRA) | LoRA: satyansh-lora-r16 | Runner: GitHub Actions (CPU) ] |
+| [ Run: #0012 | Model: SmolLM-135M-Instruct | LoRA: satyansh-lora-r16 | Runner: GitHub Actions (CPU) ] |
 <!-- satyansh-mini:end -->
 +----------------------------------------------------------------------------------------------------+
 ```
@@ -33,11 +33,11 @@ role: AI Infrastructure Engineer // Systems Programmer // Performance Architect
 numbers_that_matter:
   paytm_hackathon: 1st Place Winner (CommuneOS)
   sgp4_throughput: 275,000 steps/sec (192x Numba JIT)
-  graphmem_latency: 12ms multi-hop traversal (6GB VRAM)
-  model_params: 135M (SmolLM LoRA fine-tuned on local RTX 3050)
+  graphmem_latency: 12ms multi-hop traversal (Consumer VRAM)
+  model_params: 135M (SmolLM LoRA fine-tuned with PEFT)
 
 currently:
-  researching: GPU Architecture, Custom CUDA Kernels, Bank Conflict Mitigation
+  researching: Systems Architecture, Custom Kernels, Lock-Free Concurrency
   building: High-Throughput SLM Inference Engines & Multi-Agent Swarms
 
 philosophy: "Hardware reality dictates software architecture."
@@ -47,8 +47,8 @@ philosophy: "Hardware reality dictates software architecture."
 
 ### Focus & Directory
 
-- **Active Domains**: High-Performance Computing (HPC), GPU Architecture, CUDA Kernels, Distributed AI Systems
-- **Core Languages**: Modern C++ (17/20), CUDA C/C++, Python 3.12, Rust, Java
+- **Active Domains**: High-Performance Computing (HPC), Systems Architecture, Custom Kernels, Distributed AI Systems
+- **Core Languages**: Modern C++ (17/20), Python 3.12, Rust, Java
 - **Infrastructure & ML**: PyTorch, TensorRT, vLLM, Triton, Numba JIT, ChromaDB, FAISS, Docker
 
 #### Connect

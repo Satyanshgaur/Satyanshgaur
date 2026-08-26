@@ -73,7 +73,7 @@
 
     <!-- Compute Core / Central Chip in Brain Center -->
     <rect x="122" y="165" width="36" height="36" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="2" class="glow-cyan" />
-    <text x="140" y="188" fill="#58a6ff" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CUDA</text>
+    <text x="140" y="188" fill="#58a6ff" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CORE</text>
     <line x1="122" y1="174" x2="114" y2="174" stroke="#58a6ff" stroke-width="1.5" />
     <line x1="122" y1="183" x2="114" y2="183" stroke="#58a6ff" stroke-width="1.5" />
     <line x1="122" y1="192" x2="114" y2="192" stroke="#58a6ff" stroke-width="1.5" />
@@ -102,63 +102,60 @@
   <g transform="translate(320, 68)" class="text-base">
     <!-- User & Host Header -->
     <text x="0" y="16">
-      <tspan class="user">satyansh</tspan><tspan class="host">@fedora-rtx</tspan>
-      <tspan class="divider"> ------------------------------------------</tspan>
+      <tspan class="user">satyansh</tspan><tspan class="host">@fedora-workstation</tspan>
+      <tspan class="divider"> ----------------------------------</tspan>
     </text>
 
     <!-- System Info Rows -->
-    <text x="0" y="40">
+    <text x="0" y="42">
       <tspan class="key">. OS</tspan><tspan class="dots">: .................. </tspan><tspan class="val">Fedora Linux x86_64</tspan>
     </text>
-    <text x="0" y="60">
+    <text x="0" y="64">
       <tspan class="key">. Host</tspan><tspan class="dots">: ................ </tspan><tspan class="val-cyan">satyansh.indevs.in</tspan>
     </text>
-    <text x="0" y="80">
+    <text x="0" y="86">
       <tspan class="key">. Role</tspan><tspan class="dots">: ................ </tspan><tspan class="val">AI Infra // Systems // Perf Architect</tspan>
     </text>
-    <text x="0" y="100">
-      <tspan class="key">. Kernel</tspan><tspan class="dots">: .............. </tspan><tspan class="val">quant-6.13.0-cxx-cuda</tspan>
+    <text x="0" y="108">
+      <tspan class="key">. Kernel</tspan><tspan class="dots">: .............. </tspan><tspan class="val">quant-6.13.0-cxx-systems</tspan>
     </text>
-    <text x="0" y="120">
+    <text x="0" y="130">
       <tspan class="key">. Uptime</tspan><tspan class="dots">: .............. </tspan><tspan class="val-orange">24/7 (caffeine-driven)</tspan>
     </text>
-    <text x="0" y="140">
+    <text x="0" y="152">
       <tspan class="key">. Shell</tspan><tspan class="dots">: ............... </tspan><tspan class="val">zsh / fish</tspan>
     </text>
-    <text x="0" y="160">
+    <text x="0" y="174">
       <tspan class="key">. CPU</tspan><tspan class="dots">: ................. </tspan><tspan class="val">brain @ 4.8M thoughts/s</tspan>
     </text>
-    <text x="0" y="180">
-      <tspan class="key">. GPU</tspan><tspan class="dots">: ................. </tspan><tspan class="val-accent">NVIDIA GeForce RTX 3050 6GB (CUDA 13)</tspan>
-    </text>
-    <text x="0" y="200">
-      <tspan class="key">. Memory</tspan><tspan class="dots">: .............. </tspan><tspan class="val">16GB (strictly cache-aligned)</tspan>
+    <text x="0" y="196">
+      <tspan class="key">. Memory</tspan><tspan class="dots">: .............. </tspan><tspan class="val-accent">16GB (strictly cache-aligned)</tspan>
     </text>
 
     <!-- Stack & Focus -->
-    <text x="0" y="228">
-      <tspan class="key">. Languages</tspan><tspan class="dots">: ........... </tspan><tspan class="val">C++20, CUDA C, Python, Rust, Java</tspan>
+    <text x="0" y="226">
+      <tspan class="key">. Languages</tspan><tspan class="dots">: ........... </tspan><tspan class="val">Modern C++, Python, Rust, Java</tspan>
     </text>
     <text x="0" y="248">
-      <tspan class="key">. Focus</tspan><tspan class="dots">: ............... </tspan><tspan class="val-cyan">GPU Kernels, SLM Inference, HPC Systems</tspan>
+      <tspan class="key">. Focus</tspan><tspan class="dots">: ............... </tspan><tspan class="val-cyan">SLM Inference, Systems &amp; HPC Architecture</tspan>
     </text>
 
     <!-- Contact & Socials -->
-    <text x="0" y="276">
+    <text x="0" y="278">
       <tspan class="section-hdr">- Contact</tspan><tspan class="divider"> ---------------------------------------</tspan>
     </text>
-    <text x="0" y="296">
+    <text x="0" y="300">
       <tspan class="key">. Email</tspan><tspan class="dots">: ............... </tspan><tspan class="val">satyanshgaur0@gmail.com</tspan>
     </text>
-    <text x="0" y="316">
+    <text x="0" y="322">
       <tspan class="key">. LinkedIn</tspan><tspan class="dots">: ............ </tspan><tspan class="val-cyan">linkedin.com/in/satyansh-gaur-2b1b05370</tspan>
     </text>
-    <text x="0" y="336">
+    <text x="0" y="344">
       <tspan class="key">. GitHub</tspan><tspan class="dots">: .............. </tspan><tspan class="val-cyan">github.com/Satyanshgaur</tspan>
     </text>
 
     <!-- Terminal Color Blocks -->
-    <g transform="translate(0, 348)">
+    <g transform="translate(0, 360)">
       <rect x="0" y="0" width="20" height="9" fill="#484f58" rx="2" />
       <rect x="24" y="0" width="20" height="9" fill="#ff7b72" rx="2" />
       <rect x="48" y="0" width="20" height="9" fill="#7ee787" rx="2" />
