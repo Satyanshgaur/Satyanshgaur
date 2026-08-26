@@ -4,7 +4,7 @@
 
 <br/>
 
-### Periodic LLM Generated Comment (Working inside the Readme):
+## Periodic LLM Generated Comment (Working inside the Readme):
 
 <!-- satyansh-mini:start -->
 ```lua
