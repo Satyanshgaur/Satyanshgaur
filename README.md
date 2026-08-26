@@ -14,14 +14,14 @@
 local vault = require("satyansh.vault")
 
 vault.inference = {
-  model              = "SmolLM-135M-Instruct",
+  model              = "SmolLM-135M-Instruct (LoRA)",
   adapter            = "satyansh-lora-r16 (PEFT)",
   fine_tuned_on      = "Satyansh gaur personal data",
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 20,
-  generated_at       = "2026-08-26 15:13 UTC",
+  run_id             = 21,
+  generated_at       = "2026-08-26 15:55 UTC",
 }
 
 -- ==============================================================================
@@ -29,10 +29,9 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Hardware reality dictates software architecture.
-
-Cache hierarchies and PCIe lane limits dictate software design at
-scale.
+Memory access patterns can be slow, but memory-safe algorithms
+are always on the scene; cache misses and race conditions linger
+in memory dumps like a wake-fade nightmare.
 ]]
 ```
 <!-- satyansh-mini:end -->
