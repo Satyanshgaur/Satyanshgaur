@@ -63,16 +63,21 @@ philosophy: "Hardware reality dictates software architecture."
 
 ---
 
-### Focus & Directory
+### Focus & Stack
 
 - **Active Domains**: High-Performance Computing (HPC), GPU Architecture, CUDA Kernels, Distributed AI Systems
 - **Core Languages**: Modern C++ (17/20), CUDA C/C++, Python 3.12, Rust, Java
 - **Infrastructure & ML**: PyTorch, TensorRT, vLLM, Triton, Numba JIT, ChromaDB, FAISS, Docker
 
-#### Connect
-- Portfolio: https://satyansh.indevs.in
-- GitHub: https://github.com/Satyanshgaur
-- LinkedIn: https://www.linkedin.com/in/satyansh-gaur-2b1b05370
-- Kaggle: https://www.kaggle.com/satyanshgaur1
-- X: https://x.com/GaurSatyansh
-- Email: satyanshgaur0@gmail.com
+<br/>
+
+<div align="center">
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-satyansh.indevs.in-51a2da?style=for-the-badge&logo=firefox&logoColor=white)](https://satyansh.indevs.in)
+[![GitHub](https://img.shields.io/badge/GitHub-Satyanshgaur-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Satyanshgaur)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Satyansh%20Gaur-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/satyansh-gaur-2b1b05370)
+[![Kaggle](https://img.shields.io/badge/Kaggle-satyanshgaur1-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://www.kaggle.com/satyanshgaur1)
+[![X](https://img.shields.io/badge/X-@GaurSatyansh-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/GaurSatyansh)
+[![Email](https://img.shields.io/badge/Email-satyanshgaur0@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:satyanshgaur0@gmail.com)
+
+</div>
