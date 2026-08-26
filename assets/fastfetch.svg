@@ -1,0 +1,172 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #0d1117; rx: 12px; stroke: #30363d; stroke-width: 1.5; }
+      .text-base { font-family: ui-monospace, SFMono-Regular, "Cascadia Code", "Fira Code", Menlo, Consolas, monospace; font-size: 13px; }
+      .user { fill: #58a6ff; font-weight: bold; }
+      .host { fill: #79c0ff; }
+      .divider { fill: #484f58; }
+      .key { fill: #bc8cff; font-weight: 600; }
+      .dots { fill: #30363d; }
+      .val { fill: #c9d1d9; }
+      .val-accent { fill: #7ee787; font-weight: bold; }
+      .val-cyan { fill: #79c0ff; }
+      .val-orange { fill: #ffa657; }
+      .section-hdr { fill: #ff7b72; font-weight: bold; }
+      
+      /* Brain / Chip Art */
+      .glow-cyan { filter: drop-shadow(0 0 6px #58a6ff); }
+      .glow-purple { filter: drop-shadow(0 0 6px #bc8cff); }
+      .glow-pink { filter: drop-shadow(0 0 6px #f778ba); }
+    </style>
+    
+    <linearGradient id="brainGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58a6ff" />
+      <stop offset="50%" stop-color="#bc8cff" />
+      <stop offset="100%" stop-color="#f778ba" />
+    </linearGradient>
+
+    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0.3" />
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="880" height="430" class="bg" />
+
+  <!-- Terminal Window Dots -->
+  <circle cx="28" cy="24" r="5.5" fill="#ff5f56" />
+  <circle cx="46" cy="24" r="5.5" fill="#ffbd2e" />
+  <circle cx="64" cy="24" r="5.5" fill="#27c93f" />
+  <text x="440" y="28" fill="#8b949e" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" letter-spacing="1.5">SATYANSH // FASTFETCH</text>
+  <line x1="16" y1="44" x2="864" y2="44" stroke="#21262d" stroke-width="1" />
+
+  <!-- LEFT: Cybernetic Brain & Neural Core Vector Art -->
+  <g transform="translate(30, 60)">
+    <!-- Circuit Grid Background Lines -->
+    <path d="M 40 40 L 40 320 M 80 20 L 80 340 M 120 10 L 120 350 M 160 10 L 160 350 M 200 20 L 200 340 M 240 40 L 240 320" stroke="#161b22" stroke-width="1.2" stroke-dasharray="4 4" />
+    <path d="M 20 60 L 260 60 M 10 120 L 270 120 M 10 180 L 270 180 M 10 240 L 270 240 M 20 300 L 260 300" stroke="#161b22" stroke-width="1.2" stroke-dasharray="4 4" />
+
+    <!-- Outer Brain Contour & Neural Hemispheres (Left & Right) -->
+    <!-- Left Lobe -->
+    <path d="M 130 65 C 100 65, 65 85, 55 120 C 45 150, 60 185, 45 210 C 35 230, 45 260, 65 285 C 85 305, 115 315, 130 320" 
+          fill="none" stroke="url(#brainGrad1)" stroke-width="2.5" class="glow-cyan" />
+    <!-- Right Lobe -->
+    <path d="M 150 65 C 180 65, 215 85, 225 120 C 235 150, 220 185, 235 210 C 245 230, 235 260, 215 285 C 195 305, 165 315, 150 320" 
+          fill="none" stroke="url(#brainGrad1)" stroke-width="2.5" class="glow-pink" />
+
+    <!-- Central Neural Spine / Bus -->
+    <line x1="140" y1="55" x2="140" y2="330" stroke="#58a6ff" stroke-width="2" stroke-dasharray="6 3" />
+
+    <!-- Internal Gyri & Convolution Tracks -->
+    <path d="M 130 90 C 105 90, 85 105, 80 130 C 75 155, 95 165, 85 185 C 75 205, 90 230, 105 240 C 120 250, 125 275, 130 295" 
+          fill="none" stroke="#388bfd" stroke-width="1.8" opacity="0.85" />
+    <path d="M 150 90 C 175 90, 195 105, 200 130 C 205 155, 185 165, 195 185 C 205 205, 190 230, 175 240 C 160 250, 155 275, 150 295" 
+          fill="none" stroke="#bc8cff" stroke-width="1.8" opacity="0.85" />
+
+    <!-- Mid-level Cross Synapses -->
+    <path d="M 85 140 Q 140 120 195 140" fill="none" stroke="#79c0ff" stroke-width="1.5" stroke-dasharray="2 4" />
+    <path d="M 75 190 Q 140 210 205 190" fill="none" stroke="#d2a8ff" stroke-width="1.5" stroke-dasharray="2 4" />
+    <path d="M 90 240 Q 140 220 190 240" fill="none" stroke="#f778ba" stroke-width="1.5" stroke-dasharray="2 4" />
+
+    <!-- Compute Core / Central Chip in Brain Center -->
+    <rect x="122" y="165" width="36" height="36" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="2" class="glow-cyan" />
+    <text x="140" y="188" fill="#58a6ff" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CUDA</text>
+    <line x1="122" y1="174" x2="114" y2="174" stroke="#58a6ff" stroke-width="1.5" />
+    <line x1="122" y1="183" x2="114" y2="183" stroke="#58a6ff" stroke-width="1.5" />
+    <line x1="122" y1="192" x2="114" y2="192" stroke="#58a6ff" stroke-width="1.5" />
+    <line x1="158" y1="174" x2="166" y2="174" stroke="#bc8cff" stroke-width="1.5" />
+    <line x1="158" y1="183" x2="166" y2="183" stroke="#bc8cff" stroke-width="1.5" />
+    <line x1="158" y1="192" x2="166" y2="192" stroke="#bc8cff" stroke-width="1.5" />
+
+    <!-- Synaptic Nodes (Glowing Dots) -->
+    <circle cx="55" cy="120" r="3.5" fill="#58a6ff" class="glow-cyan" />
+    <circle cx="225" cy="120" r="3.5" fill="#f778ba" class="glow-pink" />
+    <circle cx="45" cy="210" r="3.5" fill="#388bfd" class="glow-cyan" />
+    <circle cx="235" cy="210" r="3.5" fill="#bc8cff" class="glow-purple" />
+    <circle cx="65" cy="285" r="3.5" fill="#7ee787" />
+    <circle cx="215" cy="285" r="3.5" fill="#ffa657" />
+    <circle cx="140" cy="58" r="4" fill="#58a6ff" class="glow-cyan" />
+    <circle cx="140" cy="326" r="4" fill="#bc8cff" class="glow-purple" />
+    <circle cx="105" cy="95" r="3" fill="#79c0ff" />
+    <circle cx="175" cy="95" r="3" fill="#d2a8ff" />
+    <circle cx="85" cy="185" r="3" fill="#58a6ff" />
+    <circle cx="195" cy="185" r="3" fill="#f778ba" />
+    <circle cx="105" cy="240" r="3" fill="#7ee787" />
+    <circle cx="175" cy="240" r="3" fill="#ffa657" />
+  </g>
+
+  <!-- RIGHT: Fastfetch Data -->
+  <g transform="translate(320, 68)" class="text-base">
+    <!-- User & Host Header -->
+    <text x="0" y="16">
+      <tspan class="user">satyansh</tspan><tspan class="host">@fedora-rtx</tspan>
+      <tspan class="divider"> ------------------------------------------</tspan>
+    </text>
+
+    <!-- System Info Rows -->
+    <text x="0" y="40">
+      <tspan class="key">. OS</tspan><tspan class="dots">: .................. </tspan><tspan class="val">Fedora Linux x86_64</tspan>
+    </text>
+    <text x="0" y="60">
+      <tspan class="key">. Host</tspan><tspan class="dots">: ................ </tspan><tspan class="val-cyan">satyansh.indevs.in</tspan>
+    </text>
+    <text x="0" y="80">
+      <tspan class="key">. Role</tspan><tspan class="dots">: ................ </tspan><tspan class="val">AI Infra // Systems // Perf Architect</tspan>
+    </text>
+    <text x="0" y="100">
+      <tspan class="key">. Kernel</tspan><tspan class="dots">: .............. </tspan><tspan class="val">quant-6.13.0-cxx-cuda</tspan>
+    </text>
+    <text x="0" y="120">
+      <tspan class="key">. Uptime</tspan><tspan class="dots">: .............. </tspan><tspan class="val-orange">24/7 (caffeine-driven)</tspan>
+    </text>
+    <text x="0" y="140">
+      <tspan class="key">. Shell</tspan><tspan class="dots">: ............... </tspan><tspan class="val">zsh / fish</tspan>
+    </text>
+    <text x="0" y="160">
+      <tspan class="key">. CPU</tspan><tspan class="dots">: ................. </tspan><tspan class="val">brain @ 4.8M thoughts/s</tspan>
+    </text>
+    <text x="0" y="180">
+      <tspan class="key">. GPU</tspan><tspan class="dots">: ................. </tspan><tspan class="val-accent">NVIDIA GeForce RTX 3050 6GB (CUDA 13)</tspan>
+    </text>
+    <text x="0" y="200">
+      <tspan class="key">. Memory</tspan><tspan class="dots">: .............. </tspan><tspan class="val">16GB (strictly cache-aligned)</tspan>
+    </text>
+
+    <!-- Stack & Focus -->
+    <text x="0" y="228">
+      <tspan class="key">. Languages</tspan><tspan class="dots">: ........... </tspan><tspan class="val">C++20, CUDA C, Python, Rust, Java</tspan>
+    </text>
+    <text x="0" y="248">
+      <tspan class="key">. Focus</tspan><tspan class="dots">: ............... </tspan><tspan class="val-cyan">GPU Kernels, SLM Inference, HPC Systems</tspan>
+    </text>
+
+    <!-- Contact & Socials -->
+    <text x="0" y="276">
+      <tspan class="section-hdr">- Contact</tspan><tspan class="divider"> ---------------------------------------</tspan>
+    </text>
+    <text x="0" y="296">
+      <tspan class="key">. Email</tspan><tspan class="dots">: ............... </tspan><tspan class="val">satyanshgaur0@gmail.com</tspan>
+    </text>
+    <text x="0" y="316">
+      <tspan class="key">. LinkedIn</tspan><tspan class="dots">: ............ </tspan><tspan class="val-cyan">linkedin.com/in/satyansh-gaur-2b1b05370</tspan>
+    </text>
+    <text x="0" y="336">
+      <tspan class="key">. GitHub</tspan><tspan class="dots">: .............. </tspan><tspan class="val-cyan">github.com/Satyanshgaur</tspan>
+    </text>
+
+    <!-- Terminal Color Blocks -->
+    <g transform="translate(0, 348)">
+      <rect x="0" y="0" width="20" height="9" fill="#484f58" rx="2" />
+      <rect x="24" y="0" width="20" height="9" fill="#ff7b72" rx="2" />
+      <rect x="48" y="0" width="20" height="9" fill="#7ee787" rx="2" />
+      <rect x="72" y="0" width="20" height="9" fill="#f2cc60" rx="2" />
+      <rect x="96" y="0" width="20" height="9" fill="#58a6ff" rx="2" />
+      <rect x="120" y="0" width="20" height="9" fill="#bc8cff" rx="2" />
+      <rect x="144" y="0" width="20" height="9" fill="#79c0ff" rx="2" />
+      <rect x="168" y="0" width="20" height="9" fill="#f0f6fc" rx="2" />
+    </g>
+  </g>
+</svg>

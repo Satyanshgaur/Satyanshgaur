@@ -24,7 +24,7 @@ def save_state(state):
     with open(STATE_PATH, "w") as f:
         json.dump(state, f, indent=2)
 
-def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct (LoRA)"):
+def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct", lora_name="satyansh-lora-r16"):
     state = load_state()
     state["generation_count"] += 1
     now_utc = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -34,18 +34,18 @@ def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct (LoRA
     count = state["generation_count"]
     clean_text = generated_text.strip().strip('"').strip("'")
     
-    # Wrap text cleanly for ASCII display (width ~72 chars)
-    wrapped_lines = textwrap.wrap(clean_text, width=72)
+    # Wrap text cleanly for the wide terminal box (width ~92 chars)
+    wrapped_lines = textwrap.wrap(clean_text, width=92)
     if not wrapped_lines:
         wrapped_lines = [clean_text]
-    inner_text = "\n".join([f"|  {line:<74}|" for line in wrapped_lines])
+    inner_text = "\n".join([f"| {line:<98} |" for line in wrapped_lines])
     
-    meta_line = f"[ Run: #{count:04d} | Runner: GitHub Actions (CPU) | Generated: {now_utc} | Cost: $0.00 ]"
-    meta_formatted = f"|  {meta_line:<74}|"
+    meta_line = f"[ Run: #{count:04d} | Model: {model_name} | LoRA: {lora_name} | Runner: GitHub Actions (CPU) ]"
+    meta_formatted = f"| {meta_line:<98} |"
     
     formatted_block = f"""{START_TAG}
 {inner_text}
-|                                                                              |
+|                                                                                                    |
 {meta_formatted}
 {END_TAG}"""
 
@@ -58,7 +58,6 @@ def update_readme_content(generated_text, model_name="SmolLM-135M-Instruct (LoRA
         
     pattern = re.compile(rf"{re.escape(START_TAG)}[\s\S]*?{re.escape(END_TAG)}")
     if pattern.search(content):
-        # Use lambda to prevent re.sub from interpreting backslashes as regex escapes
         new_content = pattern.sub(lambda _: formatted_block, content)
     else:
         print("[!] Delimiter tags not found in README.")
