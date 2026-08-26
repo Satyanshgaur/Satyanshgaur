@@ -55,7 +55,7 @@ numbers_that_matter:
   model_params: 135M + 1.2M LoRA (PEFT)
 
 currently:
-  researching: Systems Architecture, Custom Kernels, Lock-Free Concurrency
+  researching: GPU Architecture, Custom CUDA Kernels, Bank Conflict Mitigation
   building: High-Throughput SLM Inference Engines & Multi-Agent Swarms
 
 philosophy: "Hardware reality dictates software architecture."
@@ -65,8 +65,8 @@ philosophy: "Hardware reality dictates software architecture."
 
 ### Focus & Directory
 
-- **Active Domains**: High-Performance Computing (HPC), Systems Architecture, Custom Kernels, Distributed AI Systems
-- **Core Languages**: Modern C++ (17/20), Python 3.12, Rust, Java
+- **Active Domains**: High-Performance Computing (HPC), GPU Architecture, CUDA Kernels, Distributed AI Systems
+- **Core Languages**: Modern C++ (17/20), CUDA C/C++, Python 3.12, Rust, Java
 - **Infrastructure & ML**: PyTorch, TensorRT, vLLM, Triton, Numba JIT, ChromaDB, FAISS, Docker
 
 #### Connect

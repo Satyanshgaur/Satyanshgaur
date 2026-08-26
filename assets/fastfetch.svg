@@ -6,163 +6,161 @@
       .user { fill: #58a6ff; font-weight: bold; }
       .host { fill: #79c0ff; }
       .divider { fill: #484f58; }
-      .key { fill: #bc8cff; font-weight: 600; }
+      .key { fill: #51a2da; font-weight: 600; }
       .dots { fill: #30363d; }
       .val { fill: #c9d1d9; }
-      .val-accent { fill: #7ee787; font-weight: bold; }
+      .val-accent { fill: #51a2da; font-weight: bold; }
       .val-cyan { fill: #79c0ff; }
       .val-orange { fill: #ffa657; }
       .section-hdr { fill: #ff7b72; font-weight: bold; }
       
-      /* Brain / Chip Art */
-      .glow-cyan { filter: drop-shadow(0 0 6px #58a6ff); }
-      .glow-purple { filter: drop-shadow(0 0 6px #bc8cff); }
-      .glow-pink { filter: drop-shadow(0 0 6px #f778ba); }
+      .fedora-glow { filter: drop-shadow(0 0 12px rgba(81, 162, 218, 0.45)); }
     </style>
     
-    <linearGradient id="brainGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#58a6ff" />
-      <stop offset="50%" stop-color="#bc8cff" />
-      <stop offset="100%" stop-color="#f778ba" />
+    <!-- Fedora Official Brand Gradients -->
+    <linearGradient id="fedoraNavy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c325c" />
+      <stop offset="100%" stop-color="#294172" />
     </linearGradient>
 
-    <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.2" />
-      <stop offset="50%" stop-color="#58a6ff" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#bc8cff" stop-opacity="0.3" />
+    <linearGradient id="fedoraBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c6eb4" />
+      <stop offset="100%" stop-color="#51a2da" />
+    </linearGradient>
+
+    <linearGradient id="fedoraCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#51a2da" />
+      <stop offset="100%" stop-color="#79c0ff" />
     </linearGradient>
   </defs>
 
   <!-- Card Background -->
   <rect width="880" height="430" class="bg" />
 
-  <!-- Terminal Window Dots -->
+  <!-- Terminal Window Controls -->
   <circle cx="28" cy="24" r="5.5" fill="#ff5f56" />
   <circle cx="46" cy="24" r="5.5" fill="#ffbd2e" />
   <circle cx="64" cy="24" r="5.5" fill="#27c93f" />
-  <text x="440" y="28" fill="#8b949e" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" letter-spacing="1.5">SATYANSH // FASTFETCH</text>
+  <text x="440" y="28" fill="#8b949e" font-family="ui-monospace, monospace" font-size="11" text-anchor="middle" letter-spacing="1.5">SATYANSH // FASTFETCH (FEDORA)</text>
   <line x1="16" y1="44" x2="864" y2="44" stroke="#21262d" stroke-width="1" />
 
-  <!-- LEFT: Cybernetic Brain & Neural Core Vector Art -->
-  <g transform="translate(30, 60)">
-    <!-- Circuit Grid Background Lines -->
-    <path d="M 40 40 L 40 320 M 80 20 L 80 340 M 120 10 L 120 350 M 160 10 L 160 350 M 200 20 L 200 340 M 240 40 L 240 320" stroke="#161b22" stroke-width="1.2" stroke-dasharray="4 4" />
-    <path d="M 20 60 L 260 60 M 10 120 L 270 120 M 10 180 L 270 180 M 10 240 L 270 240 M 20 300 L 260 300" stroke="#161b22" stroke-width="1.2" stroke-dasharray="4 4" />
+  <!-- LEFT: Authentic Fedora Fastfetch Infinity Logo -->
+  <g transform="translate(45, 75)" class="fedora-glow">
+    <!-- Outer Fedora Container -->
+    <rect x="0" y="0" width="220" height="270" rx="28" fill="url(#fedoraNavy)" stroke="#3c6eb4" stroke-width="2" />
+    
+    <!-- Decorative Corner Accents -->
+    <path d="M 20 20 L 60 20 M 20 250 L 60 250 M 200 20 L 160 20 M 200 250 L 160 250" stroke="#51a2da" stroke-width="2" stroke-linecap="round" opacity="0.6" />
+    
+    <!-- Fedora Infinity Loops -->
+    <g transform="translate(10, 20)">
+      <!-- Left Loop Segment -->
+      <path d="M 85,150 
+               C 50,150 25,125 25,90 
+               C 25,55 50,30 85,30 
+               C 120,30 145,55 145,90 
+               C 145,125 120,150 85,150 Z" 
+            fill="none" stroke="url(#fedoraBlue)" stroke-width="28" stroke-linecap="round" />
+      
+      <!-- Right Loop Segment (Cyan) -->
+      <path d="M 115,190 
+               C 80,190 55,165 55,130 
+               C 55,95 80,70 115,70 
+               C 150,70 175,95 175,130 
+               C 175,165 150,190 115,190 Z" 
+            fill="none" stroke="url(#fedoraCyan)" stroke-width="28" stroke-linecap="round" />
 
-    <!-- Outer Brain Contour & Neural Hemispheres (Left & Right) -->
-    <!-- Left Lobe -->
-    <path d="M 130 65 C 100 65, 65 85, 55 120 C 45 150, 60 185, 45 210 C 35 230, 45 260, 65 285 C 85 305, 115 315, 130 320" 
-          fill="none" stroke="url(#brainGrad1)" stroke-width="2.5" class="glow-cyan" />
-    <!-- Right Lobe -->
-    <path d="M 150 65 C 180 65, 215 85, 225 120 C 235 150, 220 185, 235 210 C 245 230, 235 260, 215 285 C 195 305, 165 315, 150 320" 
-          fill="none" stroke="url(#brainGrad1)" stroke-width="2.5" class="glow-pink" />
+      <!-- Center 'f' infinity bridge (White) -->
+      <path d="M 100,45 
+               C 75,45 58,62 58,87 
+               L 58,165 
+               C 58,178 68,188 81,188 
+               L 81,188 
+               C 94,188 104,178 104,165 
+               L 104,115 
+               L 142,115 
+               C 155,115 165,105 165,92 
+               L 165,92 
+               C 165,79 155,69 142,69 
+               L 104,69 
+               L 104,87 
+               C 104,75 113,65 125,65
+               C 137,65 147,75 147,87" 
+            fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+      
+      <line x1="68" y1="108" x2="138" y2="108" stroke="#ffffff" stroke-width="14" stroke-linecap="round" />
+    </g>
 
-    <!-- Central Neural Spine / Bus -->
-    <line x1="140" y1="55" x2="140" y2="330" stroke="#58a6ff" stroke-width="2" stroke-dasharray="6 3" />
-
-    <!-- Internal Gyri & Convolution Tracks -->
-    <path d="M 130 90 C 105 90, 85 105, 80 130 C 75 155, 95 165, 85 185 C 75 205, 90 230, 105 240 C 120 250, 125 275, 130 295" 
-          fill="none" stroke="#388bfd" stroke-width="1.8" opacity="0.85" />
-    <path d="M 150 90 C 175 90, 195 105, 200 130 C 205 155, 185 165, 195 185 C 205 205, 190 230, 175 240 C 160 250, 155 275, 150 295" 
-          fill="none" stroke="#bc8cff" stroke-width="1.8" opacity="0.85" />
-
-    <!-- Mid-level Cross Synapses -->
-    <path d="M 85 140 Q 140 120 195 140" fill="none" stroke="#79c0ff" stroke-width="1.5" stroke-dasharray="2 4" />
-    <path d="M 75 190 Q 140 210 205 190" fill="none" stroke="#d2a8ff" stroke-width="1.5" stroke-dasharray="2 4" />
-    <path d="M 90 240 Q 140 220 190 240" fill="none" stroke="#f778ba" stroke-width="1.5" stroke-dasharray="2 4" />
-
-    <!-- Compute Core / Central Chip in Brain Center -->
-    <rect x="122" y="165" width="36" height="36" rx="6" fill="#161b22" stroke="#58a6ff" stroke-width="2" class="glow-cyan" />
-    <text x="140" y="188" fill="#58a6ff" font-family="monospace" font-size="10" font-weight="bold" text-anchor="middle">CORE</text>
-    <line x1="122" y1="174" x2="114" y2="174" stroke="#58a6ff" stroke-width="1.5" />
-    <line x1="122" y1="183" x2="114" y2="183" stroke="#58a6ff" stroke-width="1.5" />
-    <line x1="122" y1="192" x2="114" y2="192" stroke="#58a6ff" stroke-width="1.5" />
-    <line x1="158" y1="174" x2="166" y2="174" stroke="#bc8cff" stroke-width="1.5" />
-    <line x1="158" y1="183" x2="166" y2="183" stroke="#bc8cff" stroke-width="1.5" />
-    <line x1="158" y1="192" x2="166" y2="192" stroke="#bc8cff" stroke-width="1.5" />
-
-    <!-- Synaptic Nodes (Glowing Dots) -->
-    <circle cx="55" cy="120" r="3.5" fill="#58a6ff" class="glow-cyan" />
-    <circle cx="225" cy="120" r="3.5" fill="#f778ba" class="glow-pink" />
-    <circle cx="45" cy="210" r="3.5" fill="#388bfd" class="glow-cyan" />
-    <circle cx="235" cy="210" r="3.5" fill="#bc8cff" class="glow-purple" />
-    <circle cx="65" cy="285" r="3.5" fill="#7ee787" />
-    <circle cx="215" cy="285" r="3.5" fill="#ffa657" />
-    <circle cx="140" cy="58" r="4" fill="#58a6ff" class="glow-cyan" />
-    <circle cx="140" cy="326" r="4" fill="#bc8cff" class="glow-purple" />
-    <circle cx="105" cy="95" r="3" fill="#79c0ff" />
-    <circle cx="175" cy="95" r="3" fill="#d2a8ff" />
-    <circle cx="85" cy="185" r="3" fill="#58a6ff" />
-    <circle cx="195" cy="185" r="3" fill="#f778ba" />
-    <circle cx="105" cy="240" r="3" fill="#7ee787" />
-    <circle cx="175" cy="240" r="3" fill="#ffa657" />
+    <!-- Fedora Subtitle Tag -->
+    <rect x="45" y="232" width="130" height="22" rx="11" fill="#0d1117" stroke="#51a2da" stroke-width="1" />
+    <text x="110" y="247" fill="#51a2da" font-family="ui-monospace, monospace" font-size="10.5" font-weight="bold" text-anchor="middle" letter-spacing="1">FEDORA 41</text>
   </g>
 
-  <!-- RIGHT: Fastfetch Data -->
-  <g transform="translate(320, 68)" class="text-base">
+  <!-- RIGHT: Exact Previous Fastfetch Data -->
+  <g transform="translate(315, 68)" class="text-base">
     <!-- User & Host Header -->
     <text x="0" y="16">
-      <tspan class="user">satyansh</tspan><tspan class="host">@fedora-workstation</tspan>
-      <tspan class="divider"> ----------------------------------</tspan>
+      <tspan class="user">satyansh</tspan><tspan class="host">@fedora-rtx</tspan>
+      <tspan class="divider"> ------------------------------------------</tspan>
     </text>
 
     <!-- System Info Rows -->
-    <text x="0" y="42">
+    <text x="0" y="40">
       <tspan class="key">. OS</tspan><tspan class="dots">: .................. </tspan><tspan class="val">Fedora Linux x86_64</tspan>
     </text>
-    <text x="0" y="64">
+    <text x="0" y="60">
       <tspan class="key">. Host</tspan><tspan class="dots">: ................ </tspan><tspan class="val-cyan">satyansh.indevs.in</tspan>
     </text>
-    <text x="0" y="86">
+    <text x="0" y="80">
       <tspan class="key">. Role</tspan><tspan class="dots">: ................ </tspan><tspan class="val">AI Infra // Systems // Perf Architect</tspan>
     </text>
-    <text x="0" y="108">
-      <tspan class="key">. Kernel</tspan><tspan class="dots">: .............. </tspan><tspan class="val">quant-6.13.0-cxx-systems</tspan>
+    <text x="0" y="100">
+      <tspan class="key">. Kernel</tspan><tspan class="dots">: .............. </tspan><tspan class="val">quant-6.13.0-cxx-cuda</tspan>
     </text>
-    <text x="0" y="130">
+    <text x="0" y="120">
       <tspan class="key">. Uptime</tspan><tspan class="dots">: .............. </tspan><tspan class="val-orange">24/7 (caffeine-driven)</tspan>
     </text>
-    <text x="0" y="152">
+    <text x="0" y="140">
       <tspan class="key">. Shell</tspan><tspan class="dots">: ............... </tspan><tspan class="val">zsh / fish</tspan>
     </text>
-    <text x="0" y="174">
+    <text x="0" y="160">
       <tspan class="key">. CPU</tspan><tspan class="dots">: ................. </tspan><tspan class="val">brain @ 4.8M thoughts/s</tspan>
     </text>
-    <text x="0" y="196">
+    <text x="0" y="180">
       <tspan class="key">. Memory</tspan><tspan class="dots">: .............. </tspan><tspan class="val-accent">16GB (strictly cache-aligned)</tspan>
     </text>
 
     <!-- Stack & Focus -->
-    <text x="0" y="226">
-      <tspan class="key">. Languages</tspan><tspan class="dots">: ........... </tspan><tspan class="val">Modern C++, Python, Rust, Java</tspan>
+    <text x="0" y="210">
+      <tspan class="key">. Languages</tspan><tspan class="dots">: ........... </tspan><tspan class="val">C++20, CUDA C, Python, Rust, Java</tspan>
     </text>
-    <text x="0" y="248">
-      <tspan class="key">. Focus</tspan><tspan class="dots">: ............... </tspan><tspan class="val-cyan">SLM Inference, Systems &amp; HPC Architecture</tspan>
+    <text x="0" y="232">
+      <tspan class="key">. Focus</tspan><tspan class="dots">: ............... </tspan><tspan class="val-cyan">GPU Kernels, SLM Inference, HPC Systems</tspan>
     </text>
 
     <!-- Contact & Socials -->
-    <text x="0" y="278">
+    <text x="0" y="264">
       <tspan class="section-hdr">- Contact</tspan><tspan class="divider"> ---------------------------------------</tspan>
     </text>
-    <text x="0" y="300">
+    <text x="0" y="286">
       <tspan class="key">. Email</tspan><tspan class="dots">: ............... </tspan><tspan class="val">satyanshgaur0@gmail.com</tspan>
     </text>
-    <text x="0" y="322">
+    <text x="0" y="308">
       <tspan class="key">. LinkedIn</tspan><tspan class="dots">: ............ </tspan><tspan class="val-cyan">linkedin.com/in/satyansh-gaur-2b1b05370</tspan>
     </text>
-    <text x="0" y="344">
+    <text x="0" y="330">
       <tspan class="key">. GitHub</tspan><tspan class="dots">: .............. </tspan><tspan class="val-cyan">github.com/Satyanshgaur</tspan>
     </text>
 
     <!-- Terminal Color Blocks -->
-    <g transform="translate(0, 360)">
-      <rect x="0" y="0" width="20" height="9" fill="#484f58" rx="2" />
-      <rect x="24" y="0" width="20" height="9" fill="#ff7b72" rx="2" />
-      <rect x="48" y="0" width="20" height="9" fill="#7ee787" rx="2" />
-      <rect x="72" y="0" width="20" height="9" fill="#f2cc60" rx="2" />
-      <rect x="96" y="0" width="20" height="9" fill="#58a6ff" rx="2" />
-      <rect x="120" y="0" width="20" height="9" fill="#bc8cff" rx="2" />
-      <rect x="144" y="0" width="20" height="9" fill="#79c0ff" rx="2" />
+    <g transform="translate(0, 350)">
+      <rect x="0" y="0" width="20" height="9" fill="#294172" rx="2" />
+      <rect x="24" y="0" width="20" height="9" fill="#3c6eb4" rx="2" />
+      <rect x="48" y="0" width="20" height="9" fill="#51a2da" rx="2" />
+      <rect x="72" y="0" width="20" height="9" fill="#79c0ff" rx="2" />
+      <rect x="96" y="0" width="20" height="9" fill="#7ee787" rx="2" />
+      <rect x="120" y="0" width="20" height="9" fill="#ffa657" rx="2" />
+      <rect x="144" y="0" width="20" height="9" fill="#ff7b72" rx="2" />
       <rect x="168" y="0" width="20" height="9" fill="#f0f6fc" rx="2" />
     </g>
   </g>
