@@ -20,33 +20,26 @@ def get_git_activity():
     return []
 
 def get_dynamic_prompt():
-    knowledge_path = os.path.join(os.path.dirname(__file__), "..", "data", "knowledge.json")
-    topics = []
-    projects = []
-    if os.path.exists(knowledge_path):
-        with open(knowledge_path, "r") as f:
-            data = json.load(f)
-            topics = data.get("topics", [])
-            projects = data.get("projects", [])
-    
     commits = get_git_activity()
     
-    choices = []
-    if commits:
-        choices.append(f"Generate today's special from Satyansh's vault regarding recent work on '{commits[0]}'.")
-    if projects:
-        proj = random.choice(projects)
-        choices.append(f"Generate today's special from Satyansh's vault regarding {proj}.")
-    if topics:
-        top = random.choice(topics)
-        choices.append(f"Generate today's special from Satyansh's vault about {top}.")
-        
-    choices.extend([
-        "Generate today's special from Satyansh's vault.",
-        "What is today's special from Satyansh's technical vault?",
-        "Give me today's special from Satyansh's vault."
-    ])
+    choices = [
+        "Tell a technical joke about Satyansh.",
+        "What does Satyansh think about GPUs?",
+        "Generate a funny observation about Satyansh and performance.",
+        "What is Satyansh's idea of code optimization?",
+        "Tell me a joke about Satyansh learning low-level systems.",
+        "Observation about Satyansh and memory management.",
+        "What happens when Satyansh reviews CUDA code?",
+        "What would Satyansh say about hardware limits?",
+        "Tell a joke about Satyansh and multi-threading.",
+        "What is Satyansh currently thinking?",
+        "What does Satyansh think of high-performance computing?",
+        "Observation about Satyansh and GPU computing."
+    ]
     
+    if commits:
+        choices.append(f"Tell a technical joke about Satyansh working on '{commits[0]}'.")
+        
     return random.choice(choices)
 
 if __name__ == "__main__":
