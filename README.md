@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 23,
-  generated_at       = "2026-08-27 08:39 UTC",
+  run_id             = 24,
+  generated_at       = "2026-08-28 00:49 UTC",
 }
 
 -- ==============================================================================
@@ -29,8 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Debugging distributed systems with a single-threaded test case
-and a GPU-accelerated JIT memory pool.
+Debugging distributed systems with a single-agent test suite and
+a GPU.
 ]]
 ```
 <!-- satyansh-mini:end -->
