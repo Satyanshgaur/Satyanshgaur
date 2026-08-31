@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 29,
-  generated_at       = "2026-08-31 04:55 UTC",
+  run_id             = 30,
+  generated_at       = "2026-08-31 16:03 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 4KB heap trace and think, 'Wait, why did
-the other threads crash?' And then he'd swap out 2KB of memory
-all over again...
+Satyansh would look at a 64-core cluster of HBM3 memory bandwidth
+and think, 'Why did the OS crash?
 ]]
 ```
 <!-- satyansh-mini:end -->
