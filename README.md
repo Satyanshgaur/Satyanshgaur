@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 39,
-  generated_at       = "2026-09-03 19:15 UTC",
+  run_id             = 40,
+  generated_at       = "2026-09-04 03:58 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,9 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 4KB buffer of code and think, 'Huh,
-still slow.' But then he'd ask why there are no other 16-byte
-blocks in the system cache hierarchy...
+Satyansh would look at a 4th-party codebase and think, 'Wow, this
+feels... slow.' And then he'd ask why the performance was so
+different from what anyone had ever seen before.
 ]]
 ```
 <!-- satyansh-mini:end -->
