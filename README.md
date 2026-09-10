@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 57,
-  generated_at       = "2026-09-09 19:12 UTC",
+  run_id             = 58,
+  generated_at       = "2026-09-10 04:06 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at the code and think, 'Ugh, still 3 seconds
-of memory corruption.' But then he'd ask why there are no other
-threads in the system.
+Satyansh will look at a 4KB memory bandwidth bottleneck and
+think, 'Why did anyone bother with 64-byte cache lines?
 ]]
 ```
 <!-- satyansh-mini:end -->
