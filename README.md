@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 66,
-  generated_at       = "2026-09-12 18:16 UTC",
+  run_id             = 67,
+  generated_at       = "2026-09-13 04:21 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 4KB heap trace and think, 'Ugh, still
-slow.' But then he'd ask why the garbage collector didn't just
-wait for 10 seconds to scan another 2KB of memory...
+Satyansh would look at a 32-core machine and think, 'Why do we
+need so many threads? I can take an entire clock cycle off.
 ]]
 ```
 <!-- satyansh-mini:end -->
