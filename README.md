@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 114,
-  generated_at       = "2026-09-29 05:15 UTC",
+  run_id             = 115,
+  generated_at       = "2026-09-29 14:46 UTC",
 }
 
 -- ==============================================================================
@@ -29,8 +29,10 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh will never be able to upload 20 GB of code in parallel
-on a single graphics card.
+Satyansh would look at a system and think, 'Wow, still 10 seconds
+of latency left.' And then he'd ask why the GPU didn't just
+crash... instead of waiting for 3 seconds to see a glitch in the
+kernel.
 ]]
 ```
 <!-- satyansh-mini:end -->
