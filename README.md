@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 121,
-  generated_at       = "2026-10-01 15:18 UTC",
+  run_id             = 122,
+  generated_at       = "2026-10-01 20:56 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,9 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 25-core Intel processor and think, 'Wow,
-still slow.' And then he'd ask why the GPU didn't just crash in
-his favor when it was idle for an hour...
+Satyansh will optimize 16-core GPUs to achieve a performance of
+3.5x, and then look at the cache hierarchy and see why 4GB memory
+bandwidth is still not enough for 20% of modern systems.
 ]]
 ```
 <!-- satyansh-mini:end -->
