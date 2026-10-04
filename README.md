@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 130,
-  generated_at       = "2026-10-04 13:52 UTC",
+  run_id             = 131,
+  generated_at       = "2026-10-04 19:23 UTC",
 }
 
 -- ==============================================================================
@@ -29,10 +29,10 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 25-second video streamer and think,
-'Wait, wait... what's going on?' And then he'd just stare for an
-instant until the GPU crash rolled over and rebooted his system
-with a 10x glitch fix.
+Satyansh thinks about parallelization and optimization. He looks
+at a 10x pipeline performance gap between Intel and ARM
+architectures, then sees why ARM is still the best choice for
+scientific simulations.
 ]]
 ```
 <!-- satyansh-mini:end -->
