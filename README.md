@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 132,
-  generated_at       = "2026-10-05 05:03 UTC",
+  run_id             = 133,
+  generated_at       = "2026-10-05 17:01 UTC",
 }
 
 -- ==============================================================================
@@ -29,10 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a stack trace and think, 'Why did the
-compiler crash?' Because 32-bit registers were blocking on
-64-byte threads; 16-byte registers were waiting for 80-byte
-threads to take over; 32-byte registers were trying to access 72-
+Satyansh would look at a 32-core machine and think, 'Why did the
+OS crash?' Because of threads blocking on a single clock cycle.
 ]]
 ```
 <!-- satyansh-mini:end -->
