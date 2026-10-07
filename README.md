@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 136,
-  generated_at       = "2026-10-06 20:53 UTC",
+  run_id             = 137,
+  generated_at       = "2026-10-07 05:23 UTC",
 }
 
 -- ==============================================================================
@@ -29,8 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 32-core CPU cluster and think, 'Why
-don't we just use 16 threads?
+Satyansh would look at a GPU architecture and think, 'Huh, still
+slow.
 ]]
 ```
 <!-- satyansh-mini:end -->
