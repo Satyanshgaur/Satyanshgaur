@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 149,
-  generated_at       = "2026-10-11 05:11 UTC",
+  run_id             = 150,
+  generated_at       = "2026-10-11 14:50 UTC",
 }
 
 -- ==============================================================================
@@ -29,10 +29,10 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 32-byte clock cycle of C++ code and
-think, 'This is still slow.' But then he'd take another 10
-seconds to swap threads on his system and see how much faster the
-code looked when he had 4KB of memory available.
+Satyansh would look at a 64-byte process and think, 'Wait,
+wait... what's going on?' And then he'd switch to a 32-byte
+process with 10 threads of code staring at the same 8KB heap
+dump.
 ]]
 ```
 <!-- satyansh-mini:end -->
