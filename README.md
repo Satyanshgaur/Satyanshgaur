@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 173,
-  generated_at       = "2026-10-19 15:26 UTC",
+  run_id             = 174,
+  generated_at       = "2026-10-19 20:57 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a stack trace and think, 'Wait, there was
-another 30 seconds before this line crashed.' And then he'd
-rewrite the code to avoid that crash altogether.
+Satyansh would look at 10 seconds of performance data and think,
+'Why did that happen?
 ]]
 ```
 <!-- satyansh-mini:end -->
