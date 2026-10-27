@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 197,
-  generated_at       = "2026-10-27 14:16 UTC",
+  run_id             = 198,
+  generated_at       = "2026-10-27 20:33 UTC",
 }
 
 -- ==============================================================================
@@ -29,8 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a stack trace and think, 'Wait, there was
-another 10 seconds of memory allocation.
+Satyansh would look at a system and think, 'Wait, why did this
+happen?
 ]]
 ```
 <!-- satyansh-mini:end -->
