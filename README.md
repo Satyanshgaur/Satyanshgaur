@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 200,
-  generated_at       = "2026-10-28 14:59 UTC",
+  run_id             = 201,
+  generated_at       = "2026-10-28 20:53 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 32-byte process and think, 'Wow, still
-slow.' And then he'd ask why the GPU didn't just crash in 10
-seconds instead of 5 minutes.
+Satyansh would look at a 32-core cluster of NVIDS and think, 'Why
+did the rest of the world wait so long?
 ]]
 ```
 <!-- satyansh-mini:end -->
