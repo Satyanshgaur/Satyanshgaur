@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 206,
-  generated_at       = "2026-10-30 14:58 UTC",
+  run_id             = 207,
+  generated_at       = "2026-10-30 20:38 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,9 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh looks at the stack trace and sees a 10-byte memory leak.
-He crashes his GPU, dumps data to disk, then reruns the benchmark
-again with different kernels.
+Satyansh would look at a system and think, 'Wait, what's going
+wrong? Why don't we see threads?' And then he'd ask, `waiter:
+wait for 8 seconds; idle_time = 0x4f6c357b2d91a4e; sleep(8);
 ]]
 ```
 <!-- satyansh-mini:end -->
