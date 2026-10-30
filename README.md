@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 205,
-  generated_at       = "2026-10-30 05:16 UTC",
+  run_id             = 206,
+  generated_at       = "2026-10-30 14:58 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,9 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a GPU cluster and think, 'Why did Satyansh
-want to build this?' Because he wanted to play with a clocked
-4-socket socket.
+Satyansh looks at the stack trace and sees a 10-byte memory leak.
+He crashes his GPU, dumps data to disk, then reruns the benchmark
+again with different kernels.
 ]]
 ```
 <!-- satyansh-mini:end -->
