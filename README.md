@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 211,
-  generated_at       = "2026-11-01 05:28 UTC",
+  run_id             = 212,
+  generated_at       = "2026-11-01 14:53 UTC",
 }
 
 -- ==============================================================================
@@ -29,9 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh would look at a 32-core cluster of NVIDS and think,
-'Wow, this is still slow.' And he'd ask why nobody noticed that
-glitch when he was building his first CUDA kernel in 2015.
+Satyansh would look at a 64-byte stack trace and think, 'Ugh, why
+did this compiler compile that code?
 ]]
 ```
 <!-- satyansh-mini:end -->
