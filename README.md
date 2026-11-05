@@ -20,8 +20,8 @@ vault.inference = {
   parameters         = "135M + 1.2M LoRA",
   precision          = "FP16",
   runner             = "github-actions-cpu",
-  run_id             = 220,
-  generated_at       = "2026-11-05 06:03 UTC",
+  run_id             = 221,
+  generated_at       = "2026-11-05 16:21 UTC",
 }
 
 -- ==============================================================================
@@ -29,11 +29,8 @@ vault.inference = {
 -- ==============================================================================
 
 local completion = [[
-Satyansh looks at the stack trace and sees a 10th-party cache
-conflict. He then checks his memory management library to see if
-it's still running in the background, but crashes
-catastrophically because of a glitch caused by a 4KB buffer
-corruption scan.
+Satyansh would look at a 32-core clocked GPU and think, 'Why did
+the OS crash?
 ]]
 ```
 <!-- satyansh-mini:end -->
